@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+    height: 100vh;
+    background: linear-gradient(135deg, #0074E4, #00C9A7);
+
+    /* Abaixo são propriedades para colocar todos os conteúdos no centro da página */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  
+}
+
+.relogio {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+
+.relogio div{
+
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(5, 5, 5, .9);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 50%;
+
+    
+}
+
+.relogio span {
+
+    font-weight: bolder;
+    font-size: 60px;
+    
+}
+
+.relogio span.tempo{
+
+    font-size: 15px;
+  
+}
+
+#seletor-fusos{
+
+    background-color: transparent;
+    border: none;
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+  bottom: 100%;
+}
+
+#seletor-fusos:focus{
+
+    outline: none;
+    border: none;
+    
+}
+
+#seletor-fusos option[disabled] {
+
+    color: #888; /* Cor do texto para opções desativadas */
+    background-color: transparent; /* Fundo transparente para opções desativadas */
+    cursor: not-allowed; /* Altera o cursor para 'não permitido' para indicar que a opção não está selecionável */
+
+}
+
+
+#seletor-fusos option:checked{
+
+    background-color: #ccc; /* Define a cor de fundo para opções selecionadas */
+    
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 912px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 95%;
+        
+    }
+
+    .relogio{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    }
+
+    .relogio div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 35px;
+ 
+    }
+
+
+
+    #seletor-fusos{
+
+        background-color: transparent;
+        border: none;
+        margin-top: 85px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 820px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    
+    }
+
+    .relogio{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    }
+
+    .relogio div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 35px;
+ 
+    }
+
+
+
+    #seletor-fusos{
+
+        background-color: transparent;
+        border: none;
+        margin-top: 85px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
+
+
+@media (max-width: 712px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+  
+    }
+
+    .relogio{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    }
+
+    .relogio div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 15px;
+ 
+    }
+
+    
+    #seletor-fusos{
+
+        background-color: transparent;
+        border: none;
+        margin-top: 55px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
+
+
+@media (max-width: 540px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 5px;
+        width: 100%;
+    }
+
+    .relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+  
+   
+    }
+
+    .relogio div{
+  
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    }
+
+    #seletor-fusos{
+
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+      
+    }
+}
+
+
+@media (max-width: 414px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+   
+    }
+
+    .relogio div{
+    width: 28%;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    }
+
+    #seletor-fusos{
+
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 13px;
+        cursor: pointer;
+      
+    }
+}
+
+
+@media (max-width: 412px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      
+    }
+
+    .relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+   
+    }
+
+    .relogio div{
+    width: 30%;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    }
+
+    #seletor-fusos{
+
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+      
+    }
+}
+
+@media (max-width: 393px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+
+    }
+
+    .relogio div{
+    width: 55%;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    }
+            
+    #seletor-fusos{
+
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+      
+    }
+}
+
+
+@media (max-width: 390px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .relogio{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+
+    }
+
+    .relogio div{
+    width: 35%;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    }
+            
+    #seletor-fusos{
+
+        background-color: transparent;
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+      
+    }
+}
+
+
+@media (max-width: 384px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    }
+
+    .relogio div{
+    width: 44%;
+    border-radius: 8px;
+    box-shadow: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    }
+}
+
+@media (max-width: 375px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+
+    }
+
+    .relogio div{
+    width: 29%;
+    border-radius: 8px;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+    }
+        
+    #seletor-fusos{
+
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+      
+    }
+}
+
+@media (max-width: 360px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+    }
+
+    .relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 76%;
+    box-shadow: none;
+
+    }
+
+    .relogio div{
+    width: 38%;
+    border-radius: 8px;
+    margin: 0 5px;
+    box-shadow: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+        
+    #seletor-fusos{
+
+        background-color: transparent;
+        border: none;
+        margin-top: 55px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 13px;
+        cursor: pointer;
+        
+    }
+}
+
+@media (max-width: 320px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       width: 100%;
+    }
+
+    .relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+
+    }
+
+    .relogio div{
+    width: 38%;
+    border-radius: 8px;
+    margin: 0 7px;
+    box-shadow: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    }
+}
+
+@media (max-width: 280px){
+
+    .container-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+         width: 100%;
+    }
+
+    .relogio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    box-shadow: none;
+    
+    }
+
+    .relogio div{
+    width: 33%;
+    border-radius: 8px;
+    margin: 0 13px;
+    box-shadow: none;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+
+    }
+
+    #seletor-fusos{
+
+        border: none;
+        text-align: center;
+        font-weight: bold;
+        margin-right: 10px;
+        font-size: 12px;
+        cursor: pointer;
+        
+    }
+
+}

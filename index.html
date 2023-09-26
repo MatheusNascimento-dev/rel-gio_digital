@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/icons8-fuso-horário-96.png" type="image/x-icon">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+
+<div class="container-content">
+
+<div class="relogio">
+
+    <div>
+        <span id="horas">00</span>
+        <span class="tempo">Horas</span>
+    </div>
+
+    <div>
+        <span id="minutos">00</span>
+        <span class="tempo">Minutos</span>
+    </div>
+
+    <div>
+        <span id="segundos">00</span>
+        <span class="tempo">Segundos</span>
+    </div>
+
+
+</div>
+    
+    <select id="seletor-fusos">
+
+        <option disabled selected>ESCOLHA UM PAÍS</option>
+
+    <option value="Africa/Abidjan">Abidjan, Costa do Marfim</option>
+    <option value="Africa/Algiers">Argel, Argélia</option>
+    <option value="Africa/Cairo">Cairo, Egito</option>
+    <option value="Africa/Casablanca">Casablanca, Marrocos</option>
+    <option value="Africa/Dakar">Dakar, Senegal</option>
+    <option value="Africa/Johannesburg">Joanesburgo, África do Sul</option>
+    <option value="Africa/Lagos">Lagos, Nigéria</option>
+    <option value="Africa/Luanda">Luanda, Angola</option>
+    <option value="Africa/Nairobi">Nairobi, Quênia</option>
+    <option value="Africa/Tunis">Túnis, Tunísia</option>
+    <option value="America/Argentina/Buenos_Aires">Buenos Aires, Argentina</option>
+    <option value="America/Sao_Paulo">São Paulo, Brasil</option>
+    <option value="America/Asuncion">Assunção, Paraguai</option>
+    <option value="America/Bogota">Bogotá, Colômbia</option>
+    <option value="America/Caracas">Caracas, Venezuela</option>
+    <option value="America/Costa_Rica">San Jose, Costa Rica</option>
+    <option value="America/El_Salvador">San Salvador, El Salvador</option>
+    <option value="America/Guatemala">Cidade de Guatemala, Guatemala</option>
+    <option value="America/Guayaquil">Guayaquil, Equador</option>
+    <option value="America/Guyana">Georgetown, Guiana</option>
+    <option value="America/Havana">Havana, Cuba</option>
+    <option value="America/La_Paz">La Paz, Bolívia</option>
+    <option value="America/Lima">Lima, Peru</option>
+    <option value="America/Los_Angeles">Los Angeles, Estados Unidos</option>
+    <option value="America/Mexico_City">Cidade do México, México</option>
+    <option value="America/Montevideo">Montevidéu, Uruguai</option>
+    <option value="America/Nassau">Nassau, Bahamas</option>
+    <option value="America/New_York">Nova York, Estados Unidos</option>
+    <option value="America/Santiago">Santiago, Chile</option>
+    <option value="America/Suriname">Suriname, Paramaribo</option>
+  
+    <option value="Asia/Baghdad">Bagdá, Iraque</option>
+    <option value="Asia/Bangkok">Bangkok, Tailândia</option>
+    <option value="Asia/Colombo">Colombo, Sri Lanka</option>
+    <option value="Asia/Dhaka">Dhaka, Bangladesh</option>
+    <option value="Asia/Dubai">Dubai, Emirados Árabes Unidos</option>
+    <option value="Asia/Hong_Kong">Hong Kong, China</option>
+    <option value="Asia/Istanbul">Istambul, Turquia</option>
+    <option value="Asia/Jakarta">Jacarta, Indonésia</option>
+    <option value="Asia/Jerusalem">Jerusalém, Israel</option>
+    <option value="Asia/Karachi">Karachi, Paquistão</option>
+    <option value="Asia/Kathmandu">Katmandu, Nepal</option>
+    <option value="Asia/Kolkata">Mumbai, Índia</option>
+    <option value="Asia/Manila">Manila, Filipinas</option>
+    <option value="Asia/Moscou">Moscou, Rússia</option>
+    <option value="Asia/Riyadh">Riyadh, Arábia Saudita</option>
+    <option value="Asia/Shanghai">Pequim, China</option>
+    <option value="Asia/Singapore">Cingapura</option>
+    <option value="Asia/Tehran">Teerã, Irã</option>
+    <option value="Asia/Tokyo">Tóquio, Japão</option>
+    <option value="Australia/Sydney">Sydney, Austrália</option>
+    <option value="Europe/Amsterdam">Amsterdã, Países Baixos</option>
+    <option value="Europe/Athens">Atenas, Grécia</option>
+    <option value="Europe/Berlin">Berlim, Alemanha</option>
+    <option value="Europe/Brussels">Bruxelas, Bélgica</option>
+    <option value="Europe/Budapest">Budapeste, Hungria</option>
+    <option value="Europe/Bucharest">Bucareste, Romênia</option>
+    <option value="Europe/Copenhagen">Copenhague, Dinamarca</option>
+    <option value="Europe/Dublin">Dublin, Irlanda</option>
+    <option value="Europe/Helsinki">Helsinque, Finlândia</option>
+    <option value="Europe/Lisbon">Lisboa, Portugal</option>
+    <option value="Europe/London">Londres, Reino Unido</option>
+    <option value="Europe/Madrid">Madrid, Espanha</option>
+    <option value="Europe/Oslo">Oslo, Noruega</option>
+    <option value="Europe/Paris">Paris, França</option>
+    <option value="Europe/Prague">Praga, República Tcheca</option>
+    <option value="Europe/Rome">Roma, Itália</option>
+    <option value="Europe/Stockholm">Estocolmo, Suécia</option>
+    <option value="Europe/Vienna">Viena, Áustria</option>
+    <option value="Europe/Warsaw">Varsóvia, Polônia</option>
+    <option value="Europe/Zurich">Zurique, Suíça</option>
+    <option value="Pacific/Apia">Apia, Samoa</option>
+    <option value="Pacific/Fiji">Suva, Fiji</option>
+    <option value="Pacific/Honiara">Honiara, Ilhas Salomão</option>
+    <option value="Pacific/Majuro">Majuro, Ilhas Marshall</option>
+    <option value="Pacific/Nauru">Nauru, Nauru</option>
+    <option value="Pacific/Pago_Pago">Pago Pago, Samoa Americana</option>
+    <option value="Pacific/Palikir">Palikir, Micronésia</option>
+    <option value="Pacific/Port_Moresby">Port Moresby, Papua Nova Guiné</option>
+    <option value="Pacific/Auckland">Auckland, Nova Zelândia</option>
+    <option value="Australia/Sydney">Sydney, Austrália</option>
+
+    </select>
+    
+</div>
+
+</body>
+</html>
