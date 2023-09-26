@@ -268,8 +268,8 @@ body{
     }
 
     .relogio div{
-  
-    border-radius: 50%;
+        
+    border-radius: 8px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -280,7 +280,7 @@ body{
 
     #seletor-fusos{
 
-        background-color: transparent;
+       
         border: none;
         text-align: center;
         font-weight: bold;
